@@ -20,19 +20,19 @@ jobs:
         run: npm install --workspaces
 
       - name: Lint backend
-        run: npm run lint  --workspace backend
+        run: npm run lint:backend
 
       - name: Lint frontend
-        run: npm run lint --workspace frontend
+        run: npm run lint:frontend
 
       - name: Test backend
-        run: npm test --workspace backend
+        run: npm run test:backend
 
       - name: Test frontend
-        run: npm test--workspace frontend
+        run: npm run test:frontend
 
       - name: Build backend
-        run: npm run build  --workspace backend
+        run: npm run build:backend
 
       - name: Build frontend
-        run: npm run build --workspace frontend
+        run: npm run build:frontend
