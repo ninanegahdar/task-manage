@@ -36,3 +36,5 @@ jobs:
 
       - name: Build frontend
         run: npm run build:frontend
+      - name: Security audit
+        run: npm audit --audit-level=moderate
